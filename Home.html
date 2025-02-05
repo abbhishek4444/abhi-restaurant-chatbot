@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhi's Restaurant - Fast food restaurant in Gandhinagar. Enjoy a variety of delicious dishes including Pav Bhaji, Pizza, Pasta, and more!">
+    <title>Abhi's Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-buttons">
+        <button onclick="window.location.href='#menu'">Menu</button>
+        <button onclick="window.location.href='#location'">Location</button>
+        <button onclick="window.location.href='#contact'">Contact</button>
+    </div>
+    <h1></h1>
+</header>
+
+<!-- Banner Section -->
+<section class="banner">
+    <img src="Abhi’s.jpg" alt="Abhi's Restaurant Banner">
+</section>
+
+<div id="menu" class="menu">
+    <div class="menu-item">
+        <img src="Pavbhaji.jpg" alt="Pav Bhaji">
+        <h3>Pav Bhaji</h3>
+        <p>Delicious pav with spiced veggie mix</p>
+    </div>
+    <div class="menu-item">
+        <img src="pizza.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Classic cheesy pizza with your favorite toppings</p>
+    </div>
+    <div class="menu-item">
+        <img src="Pulav.jpg" alt="Pulav">
+        <h3>Pulav</h3>
+        <p>Fluffy rice with mixed veggies and spices</p>
+    </div>
+    <div class="menu-item">
+        <img src="Daalrice.jpg" alt="Daal Rice">
+        <h3>Daal Rice</h3>
+        <p>Comforting daal served with steamed rice</p>
+    </div>
+    <div class="menu-item">
+        <img src="Dhokla.jpg" alt="Dhokla">
+        <h3>Dhokla</h3>
+        <p>Soft and spongy steamed snack</p>
+    </div>
+    <div class="menu-item">
+        <img src="Khaman.jpg" alt="Khaman">
+        <h3>Khaman</h3>
+        <p>Light, fluffy, and tangy snack</p>
+    </div>
+    <div class="menu-item">
+        <img src="pasta.jpg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p>Italian pasta served with rich sauces</p>
+    </div>
+    <div class="menu-item">
+        <img src="Dabeli.jpg" alt="Dabeli">
+        <h3>Dabeli</h3>
+        <p>Spicy and sweet sandwich snack</p>
+    </div>
+    <div class="menu-item">
+        <img src="Vadapav.jpg" alt="Vada Pav">
+        <h3>Vada Pav</h3>
+        <p>Fried potato ball in a pav bun</p>
+    </div>
+</div>
+
+<div id="location" class="location">
+    <p>Location: Infocity, Gandhinagar</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Abhi's Restaurant | <a href="https://www.instagram.com" target="_blank">Follow us on Instagram</a></p>
+</footer>
+<script>
+function toggleChatbot() {
+    var chatbot = document.getElementById("chatbot-frame");
+    if (chatbot.style.display === "none" || chatbot.style.display === "") {
+        chatbot.style.display = "block";
+    } else {
+        chatbot.style.display = "none";
+    }
+}
+</script>
+<div class="chatbot-container">
+    <button class="chatbot-toggle" onclick="toggleChatbot()">💬 Chat with Us</button>
+    <div id="chatbot-frame" class="chatbot-frame">
+        <iframe width="350" height="430" allow="microphone;"
+                src="https://console.dialogflow.com/api-client/demo/embedded/ab386bf3-d4fd-4aa7-afc3-a693ba5ef786">
+        </iframe>
+    </div>
+</div>
+
+</body>
+</html>
+
